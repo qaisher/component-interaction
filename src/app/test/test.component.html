@@ -1,0 +1,32 @@
+<h1>{{"Hello, "+ parentData + ", aged " + age}}</h1>
+
+<p>test works!</p>
+
+<button type="button" (click)="fireEvent()">Send Event to Parent</button>
+
+
+<!--Pipes-->
+
+<h2>{{testText | lowercase }}</h2>
+<h2>{{testText | uppercase }}</h2>
+<h2>{{testText | titlecase }}</h2>
+<h2>{{testText | slice:3:8 }}</h2>
+
+<h4>{{person | json}}</h4>
+
+<h3>{{4.122 | number:'1.4-5'}}</h3>
+<h3>{{4.122 | number:'3.1-5'}}</h3>
+<h3>{{4.126 | number:'2.1-2'}}</h3> <!--rounds off-->
+
+<h1>{{0.12 | percent}}</h1>
+
+<h2>{{ 23 | currency: "INR"}}</h2>
+<h2>{{ 23 | currency: "INR": 'code'}}</h2>
+
+<h3>{{date}}</h3>
+<h3>{{date | date}}</h3>
+<h3>{{date | date: 'short'}}</h3>
+<h3>{{date | date: 'shortDate'}}</h3>
+<h3>{{date | date: 'shortTime'}}</h3>
+<h3>{{date | date: 'medium'}}</h3>
+<h3>{{date | date: 'long'}}</h3>
